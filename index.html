@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Otamoz</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script
+  	src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+  	integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+  	crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="navbar navbar-default " id="navbarCss"> <!-- navbar-fixed-top -->
+  <div class="containerNav">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> <span class="glyphicon glyphicon-fire"></span> OTAMOZ</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Cart  <i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+        <li><a href="signupPage.html">Signup  <i class="fa fa-user-plus"></i></a></li>
+        <li><a href="loginPage.html">Login  <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="column shadow col-lg-12 content">
+Hungry? <br>
+Order food from favourite restaurants near you.
+
+    </div>
+	</div>
+  <div class="row section">
+    <div class="columnSection shadow col-lg-4" id="leftSection">
+      
+      Find the best restaurants, cafés, and bars in Allahabad
+      <br>
+      <br>
+      <span class="glyphicon glyphicon-fire" id="orderGlyph"></span>
+    <br>
+      <button class="shadow" id="orderNowBtn">Order Now</button>
+    </div>
+    <div class="columnSection col-lg-8"id="middleSection">
+            <video id="vid" autoplay loop muted>
+        <source src="food.webm" type="video/webm" id="vid">
+      Your browser does not support the video tag.
+</video>
+    </div>
+    <div class="columnSection shadow col-lg-4" id="rightSection">
+    </div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA8HrrskCtdaw2jgM3NKRyjd1CwjzrMA1Q",
+    authDomain: "otamoz.firebaseapp.com",
+    databaseURL: "https://otamoz.firebaseio.com",
+    projectId: "otamoz",
+    storageBucket: "otamoz.appspot.com",
+    messagingSenderId: "828193643485"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
